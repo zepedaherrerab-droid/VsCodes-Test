@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+    
+    <body>
+        <h1>Stargaze</h1>
+        <nav class="nav-bar">
+        <header>
+            <section class="opciones">
+                <h3>Planetas</h3>
+                <h3>Estrellas</h3>
+                <h3>Constelaciones</h3>
+                <h3>Estrellas Fugaces</h3>
+            </section>
+        </header>
+            <article>
+                <input type="text" placeholder="Buscar" />
+                <button id="buscar" onclick="buscar()">Buscar</button>
+            </article>
+        </nav>
+        
+        <main class="izquierda">
+            <section class="estrellados">
+                <h1>Estrellados</h1>
+                <p class="tiempo">hace 6 minutos</p>
+                <p>Quiero compartir con mis amigos esta bella constelación que encontré hace un par de días.</p>
+        <figure>
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Imagen de constelación" class="img">
+        </figure>
+            <button class="like-button" onclick="likePost(1)">
+                        <span class="like-icon">👍</span>
+                        <span id="like-count"></span>
+                    </button>    
+                    <button class="like-button" onclick="likePost(2)">
+                        <span class="heart-icon">♥</span>
+                        <span id="like-count"></span>
+                    </button>
+            </section>
+
+        <Aside class="derecha">
+            <h1>Publicidad</h1>
+            <section class="publicidad">
+                <p>Tenemos las noticias estelares</p>
+                <img2 src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Publicidad" class="img">
+                <button id="publicidad" onclick="seguirPublicidad()">Seguir</button>
+            </section>
+        </Aside>
+        </main>
+    </body>
+</html>
